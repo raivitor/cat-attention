@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entretenha Seu Gato</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+        }
+
+        #ratinho {
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            background-color: #aaa;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <img id="ratinho"
+        src="data:image/png;base64,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">
+    <audio id="miadoAudio" controls autoplay>
+        <source src="miado.mp3" type="audio/mp3">
+        Seu navegador não suporta o elemento de áudio.
+    </audio>
+    <!-- <svg id="ratinho" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="10" fill="#aaa" />
+        <circle cx="9" cy="10" r="2" fill="#fff" />
+        <circle cx="15" cy="10" r="2" fill="#fff" />
+        <ellipse cx="12" cy="14" rx="3" ry="2" fill="#fff" />
+    </svg> -->
+
+
+    <script>
+        function moveRatinho() {
+            var ratinho = document.getElementById('ratinho');
+            var maxX = window.innerWidth - ratinho.clientWidth;
+            var maxY = window.innerHeight - ratinho.clientHeight;
+
+            var randomX = Math.floor(Math.random() * maxX);
+            var randomY = Math.floor(Math.random() * maxY);
+
+            ratinho.style.transition = "left 3s linear, top 3s linear";
+            ratinho.style.left = randomX + 'px';
+            ratinho.style.top = randomY + 'px';
+
+            setTimeout(function () {
+                moveRatinho();
+            }, 3000); // Aguarde 3 segundos antes de chamar a função novamente
+        }
+
+        moveRatinho(); // Inicie o movimento do rato
+    </script>
+</body>
+
+</html>
